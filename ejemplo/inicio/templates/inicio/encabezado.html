@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>{% block titulo %}Encabezado{% endblock titulo %}</title>
+    </head>
+    <body>
+     
+        <a href="/">Home</a> 
+        <a href = "/contacto"> Contactanos </a>
+        <a href = "/encabezado"> Encabezado </a>
+        {% block  contenido%}
+        <!--block sirve para indicar que colocaremos un bloque de
+        contenido a través de nuestra variable content -->
+        {% endblock  %}
+        
+    </body>
+</html>
